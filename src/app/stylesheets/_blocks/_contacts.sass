@@ -1,0 +1,62 @@
+.contacts
+  text-align: center
+  margin-bottom: 20px
+
+  &__title
+    padding-top: 10px
+    margin-bottom: 15px
+    font-size: 18px
+    font-weight: 600
+    color: $accent-color
+
+  &__text
+    color: $sub-color
+    margin-bottom: 10px
+
+  &__form
+    margin-bottom: 50px
+
+  &__phone
+    margin-bottom: 30px
+    color: $accent-color
+    font-size: 20px
+    font-weight: 600
+
+  &__address
+    font-size: 18px
+    font-weight: 600
+    color: $accent-color
+    margin-bottom: 15px
+
+  &__map
+    padding: 0 15px
+    margin-bottom: 5px
+
+  &__operators
+    display: block
+    margin-top: 20px
+    margin-bottom: 50px
+    text-align: center
+
+.operator
+  position: relative
+  display: inline-block
+  margin: 0 auto
+  width: 200px
+
+  &:after
+    position: absolute
+    content: ''
+    bottom: -5px
+    left: 0
+    height: 30px
+    width: inherit
+    background-color: $accent-color
+    opacity: .7
+
+  &__name
+    position: relative
+    margin-top: -27px
+    color: #333
+    font-weight: 600
+    z-index: 1

@@ -1,0 +1,132 @@
+.course-info
+  &__wrapper
+  @include clearfix
+
+.price
+  position: absolute
+  max-width: 300px
+  padding: 0 5px
+
+  &-study
+    max-width: 300px
+    min-width: 300px
+    margin: 0 auto
+
+    &__item
+      @include clearfix
+      text-align: center
+      margin-bottom: 3px
+
+    &__plan
+      position: relative
+      text-align: center
+      margin-bottom: 3px
+      color: #808080
+      background-color: #c6c6c6
+      transition: all .2s ease
+      vertical-align: bottom
+
+      &--selected
+        background-color: $accent-color
+        color: #fff
+        transition: all .2s ease
+
+    &__check
+      position: relative
+      float: left
+      opacity: 0
+      appearance: none
+
+    &__check + label
+      cursor: pointer
+
+    &__check:checked
+      position: relative
+
+      &+ label:after
+        position: absolute
+        content: ''
+        width: 10px
+        height: 10px
+        border: 4px solid #fff
+        border-radius: 50%
+        top: 15px
+        left: 15px
+        background-color: transparent
+        transition: all .15s ease
+
+    &__check:not(checked)
+      position: relative
+
+      &+ label:after
+        position: absolute
+        content: ''
+        width: 10px
+        height: 10px
+        border: 4px solid #fff
+        border-radius: 50%
+        top: 15px
+        left: 15px
+        background-color: #fff
+        transition: all .15s ease
+
+    &__info
+      padding: 5px 0
+      margin-right: 25px
+      text-align: center
+
+    &__price
+      &--old
+        font-size: 12px
+        text-decoration: line-through
+
+      &--new
+        font-weight: 600
+        font-size: 18px
+
+    &__time
+      padding-right: 5px
+      margin-top: -27px
+      margin-right: -25px
+      float: right
+
+    &__text
+      box-sizing: border-box
+      width: 100%
+      padding-top: 5px
+      padding-bottom: 5px
+      padding-left: 5px
+      font-size: 16px
+      color: $sub-color
+      border: 2px solid $accent-color
+      outline: none
+      resize: none
+
+    &__btn
+      width: 100%
+      margin-top: -3.5px
+      font-size: 24px
+      padding: 5px 0
+      color: #fff
+      background-color: $accent-color
+      border: none
+      outline: none
+      cursor: pointer
+
+.course-info
+  margin-left: 310px
+  margin-top: 10px
+  margin-bottom: 15px
+  padding: 0 10px
+  box-sizing: border-box
+
+  &__text
+    margin-top: 0
+    line-height: 1.5
+    font-size: 18px
+    color: $sub-color
+    text-align: justify
+
+  &__gallery
+    padding: 10px 0
+    text-align: center
